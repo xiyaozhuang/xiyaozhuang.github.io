@@ -9,20 +9,24 @@
       
       
       
+        <link rel="prev" href="..">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../example-section/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Xiyao Zhuang</title>
+        <title>Noughts & Crosses - Xiyao Zhuang</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -38,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -88,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Xiyao Zhuang" class="md-header__button md-logo" aria-label="Xiyao Zhuang" data-md-component="logo">
+    <a href=".." title="Xiyao Zhuang" class="md-header__button md-logo" aria-label="Xiyao Zhuang" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -107,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Noughts & Crosses
             
           </span>
         </div>
@@ -155,7 +159,7 @@
     
     <div class="md-container" data-md-component="container">
       
-      
+       
         
           
             
@@ -169,7 +173,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/." class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -178,10 +182,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="/noughts-and-crosses/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Noughts & Crosses
     </a>
   </li>
@@ -196,7 +202,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/example-section/" class="md-tabs__link">
+      <a href="../example-section/" class="md-tabs__link">
         Example Section
       </a>
     </li>
@@ -209,12 +215,68 @@
           
         
       
+
+<link rel="stylesheet" href="../stylesheets/blank-template.css" />
+<link rel="stylesheet" href="../stylesheets/noughts-and-crosses.css" />
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<py-script src="../python-scripts/noughts-and-crosses.py"></py-script>
+
+<section class="container">
+  <div id="board" class="board">
+    <div class="row">
+      <div id="index-1" class="cell">
+        <button py-click="game.make_move('index-1')"></button>
+      </div>
+
+      <div id="index-2" class="cell">
+        <button py-click="game.make_move('index-2')"></button>
+      </div>
+
+      <div id="index-3" class="cell">
+        <button py-click="game.make_move('index-3')"></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="index-4" class="cell">
+        <button py-click="game.make_move('index-4')"></button>
+      </div>
+
+      <div id="index-5" class="cell">
+        <button py-click="game.make_move('index-5')"></button>
+      </div>
+
+      <div id="index-6" class="cell">
+        <button py-click="game.make_move('index-6')"></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="index-7" class="cell">
+        <button py-click="game.make_move('index-7')"></button>
+      </div>
+
+      <div id="index-8" class="cell">
+        <button py-click="game.make_move('index-8')"></button>
+      </div>
+
+      <div id="index-9" class="cell">
+        <button py-click="game.make_move('index-9')"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -224,7 +286,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Xiyao Zhuang" class="md-nav__button md-logo" aria-label="Xiyao Zhuang" data-md-component="logo">
+    <a href=".." title="Xiyao Zhuang" class="md-nav__button md-logo" aria-label="Xiyao Zhuang" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -255,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
       </a>
     </li>
@@ -268,11 +330,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/noughts-and-crosses/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Noughts & Crosses
       </a>
+      
     </li>
   
 
@@ -303,7 +373,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/example-section/">Example Section</a>
+          <a href="../example-section/">Example Section</a>
           
         </div>
       
@@ -330,7 +400,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -349,9 +421,7 @@
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
-                
-  <h1>404 - Not found</h1>
-
+                 
               </article>
             </div>
           
@@ -367,6 +437,44 @@
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../example-section/" class="md-footer__link md-footer__link--next" aria-label="Next: Example heading" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Example heading
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -484,10 +592,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "/assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
       
     
   </body>
